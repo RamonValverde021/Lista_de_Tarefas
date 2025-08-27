@@ -83,11 +83,15 @@ input.entrada {
     font-size: 17px;
     font-weight: bold;
     color: rgb(49, 49, 49);
-    padding: 5px 10px;
+    padding: 5px 2%;
     border: 2px rgb(49, 49, 49) solid;
     border-radius: 15px;
-    width: 48%;
+    width: 42%;
     margin: 2%;
+}
+
+input#pesquisar {
+    width: 92%;
 }
 
 button.botao {
@@ -114,7 +118,7 @@ select.selecao {
     color: rgb(49, 49, 49);
     font-size: 17px;
     font-weight: bold;
-    width: 98%;
+    width: 96%;
     margin: 2%;
     border: 2px rgb(49, 49, 49) solid;
     border-radius: 5px;
@@ -131,7 +135,14 @@ optgroup#grupoTarefas {
 option {
     color: rgb(49, 49, 49);
     font-size: 17px;
-    padding: 5px 0px;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+
+option:hover {
+    color: #ececec;
+    background-color: chocolate;
+    cursor: pointer;
 }
 
 footer {

@@ -14,20 +14,19 @@
     <main>
         <h1>Lista de Tarefas</h1>
         <div id="interface">
-
-            <!-- Campo de entrada -->
-            <input type="text" id="tarefaInput" placeholder="Digite uma tarefa">
-            <button id="btnAdicionar">Adicionar</button>
-            <button id="btnRemoverTodos">Limpar</button>
-
+            <div class="comandos">
+                <!-- Campo de entrada -->
+                <input type="text" id="tarefaInput" class="entrada" placeholder="Digite uma tarefa">
+                <button id="btnAdicionar" class="botao">Adicionar</button>
+                <button id="btnRemoverTodos" class="botao">Limpar</button>
+            </div>
             <!-- Select que vai conter as tarefas -->
             <select name="lista_tarefas" id="tarefas" class="selecao" size="3">
                 <optgroup label="Minhas Tarefas" id="grupoTarefas">
                     <!-- <option value="tarefa1">Tarefa 1</option> -->
                 </optgroup>
             </select>
-
-            <p><small>Clique em uma tarefa para remover</small></p>
+            <p>Clique em uma tarefa para remover</p>
         </div>
     </main>
     <footer>

@@ -6,20 +6,30 @@
     padding: 0px;
 }
 
+/* get the required local files */
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto.eot'); /* IE9 Compat Modes */
+  src: url('roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('roboto.woff') format('woff'), /* Modern Browsers */
+  url('roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 html {
     /*background-color: rgb(255, 255, 255);*/
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: white;
 }
 
 body {
-    background: url(../_images/fundo_02.jpg) no-repeat top center fixed;
-    background-size: cover;
+    background-color: #e5f5ff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 87.5vh;
 }
 
 img#icone {
@@ -33,11 +43,9 @@ img#icone {
 
 main {
     margin-top: 2%;
-    padding: 2%;
-    padding-top: 1%;
-    background-color: orange;
+    padding: 1% 2%;
+    background-color: #015c91;
     border: 3px white solid;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,9 +63,8 @@ h1 {
 }
 
 P {
-    color: rgb(49, 49, 49);
+    color: #021024;
     font-size: 17px;
-    font-weight: bold;
     margin: 0 2%;
 }
 
@@ -82,9 +89,9 @@ div.comandos {
 input.entrada {
     font-size: 17px;
     font-weight: bold;
-    color: rgb(49, 49, 49);
+    color: #021024;
     padding: 5px 2%;
-    border: 2px rgb(49, 49, 49) solid;
+    border: 2px #021024 solid;
     border-radius: 15px;
     width: 42%;
     margin: 2%;
@@ -97,60 +104,61 @@ input#pesquisar {
 button.botao {
     font-size: 17px;
     font-weight: bold;
+    color: #021024;
     text-align: center;
     background-color: white;
-    color: rgb(49, 49, 49);
     width: 20%;
     padding: 5px 10px;
     margin: 2%;
-    border: 2px rgb(49, 49, 49) solid;
+    border: 2px #021024 solid;
     border-radius: 15px;
 }
 
 button.botao:hover {
-    color: #ececec;
-    background-color: chocolate;
-    border: 2px #ececec solid;
+    color: white;
+    background-color: #2d82b5;
+    border: 2px white solid;
     cursor: pointer;
 }
 
 select.selecao {
-    color: rgb(49, 49, 49);
+    color: #021024;
     font-size: 17px;
     font-weight: bold;
     width: 96%;
     margin: 2%;
-    border: 2px rgb(49, 49, 49) solid;
+    border: 2px #021024 solid;
     border-radius: 5px;
 }
 
 optgroup#grupoTarefas {
     /* Titulo das Tarefas */
-    color: rgb(49, 49, 49);
+    color: #021024;
     font-size: 17px;
     font-weight: bold;
     padding: 5px 5px;
 }
 
 option {
-    color: rgb(49, 49, 49);
+    color: #021024;
     font-size: 17px;
     font-weight: bold;
     padding: 5px 5px;
 }
 
 option:hover {
-    color: #ececec;
-    background-color: chocolate;
+    color: white;
+    background-color: #2d82b5;
     cursor: pointer;
 }
 
 footer {
     text-align: center;
-    margin: 2% 0;
+    margin-top: 2%;
     padding: 1%;
     width: 98%;
     color: #ececec;
-    background-color: chocolate;
+    font-weight: 500;
+    background-color: #2d82b5;
     font-size: 17px;
 }
